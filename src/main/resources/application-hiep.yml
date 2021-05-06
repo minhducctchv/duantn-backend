@@ -1,0 +1,44 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+#    url: jdbc:mysql://qz8si2yulh3i7gl3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/m3by1xtcovbjndjx?UseSSL=false
+#    username: zfx7gu0qdi44b9ny
+#    password: l5f477kn5iy5y4a1
+    url: jdbc:mysql://localhost:3306/duantn?UseSSL=false
+    username: root
+    password: songlong
+  servlet:
+    multipart:
+      max-file-size: 512MB
+      max-request-size: 512MB
+      enabled: true
+
+
+paypal:
+  mode: sandbox
+  client:
+    app: AaQJG77Cznkn1lerQBXotCWZJE26t_MzGG-egY1-dQWlYKgk1RV3i6MiVVIo-gM1IsmYqeBKAyanf67F
+    secret: EJK9Jw94NGuECSqwgYr3rI8_kQdxkpLdATY7_XE9OU5rBryNAX0kLuJfYF7cWe7DIGKOrZVKbn8JRJAS
+
+duantn:
+  rate: 23100
+  day:
+    price: 2000
+  week:
+    price: 12000
+  month:
+    price: 48000
+  vip:
+    day:
+      price: 10000
+    week:
+      price: 60000
+    month:
+      price: 240000
+  point:
+    price: 1000
+  renew:
+    price: 10000
